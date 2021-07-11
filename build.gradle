@@ -1,0 +1,39 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.5.2'
+        
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/'}
+
+        maven { url'https://maven.aliyun.com/repository/public/' }
+
+        maven { url'https://maven.aliyun.com/repository/google/' }
+
+        maven { url'https://maven.aliyun.com/repository/jcenter/' }
+
+        maven { url'https://maven.aliyun.com/repository/central/' }
+        maven {url 'https://dl.bintray.com/jetbrains/anko'} //这是你需要加入的，这个是解决这个问题的关键地方，我就是添加这个maven后不
+
+        jcenter()
+        
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

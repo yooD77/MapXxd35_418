@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="login_background">#6fb9e4</color>
+     <color name="white">#ffffff</color>
+    
+    
+    <color name="app_common_actionbar_bg">#3190e8</color>    <!-- ActionBar背景颜色 -->
+    <color name="color_bottom_text_normal">#666666</color>   <!-- Tab选项文字未选中颜色 -->
+    <color name="color_bottom_text_press">#3385ff</color>    <!-- Tab选项文字选中颜色 -->
+    <color name="app_tab_top_separator">#cccccc</color>      <!-- Tab顶部分割线背景颜色 -->
+    <color name="app_tab_backgound_bg">#ffffff</color>       <!-- Tab背景颜色 -->
+     <color name="tv_location_bg">#f3eb12</color>       	 <!-- 位置提醒背景颜色 -->
+    
+    <color name="display_background">#9bda6d</color>
+    <color name="press_start">#ef1557</color>
+</resources>

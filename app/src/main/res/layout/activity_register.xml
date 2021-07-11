@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+	App注册页面布局
+	
+ -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_background"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/et_register_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/app_register_left_right_margin"
+        android:layout_marginRight="@dimen/app_register_left_right_margin"
+        android:layout_marginTop="@dimen/app_register_parenttop"
+        android:background="@drawable/app_normal_login_button_background"
+        android:hint="@string/register_username" />
+
+    <Button
+        android:id="@+id/btn_register_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_register_confirm_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/app_register_margintop"
+        android:background="@drawable/app_normal_login_button_background"
+        android:paddingLeft="@dimen/app_login_view_margin_right_left"
+        android:paddingRight="@dimen/app_login_view_margin_right_left"
+        android:text="@string/register" />
+
+    <EditText
+        android:id="@+id/et_register_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et_register_username"
+        android:layout_alignRight="@+id/et_register_username"
+        android:layout_below="@+id/et_register_username"
+        android:layout_marginTop="@dimen/app_register_margintop"
+        android:background="@drawable/app_normal_login_button_background"
+        android:hint="@string/register_password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/et_register_confirm_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et_register_password"
+        android:layout_alignRight="@+id/et_register_password"
+        android:layout_below="@+id/et_register_password"
+        android:layout_marginTop="@dimen/app_register_margintop"
+        android:background="@drawable/app_normal_login_button_background"
+        android:hint="@string/register_confirm_password"
+        android:inputType="textPassword" />
+
+</RelativeLayout>

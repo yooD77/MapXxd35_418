@@ -1,0 +1,40 @@
+<resources>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    
+    <dimen name="app_login_view_top">15dp</dimen>
+    <dimen name="app_login_view_margin_right_left">20dp</dimen>
+    
+    
+     <dimen name="app_login_icon_text_top">20dp</dimen>
+     <dimen name="app_login_choice_marginLeft">20dp</dimen>
+     <dimen name="app_login_choice_marginmiddle">40dp</dimen>
+     <dimen name="app_login_choice_button_textsize">20sp</dimen>
+     
+     <!-- 公共ActionBar -->
+    <dimen name="app_coomon_actionbar_paddingLeft">10dip</dimen>
+    <dimen name="app_coomon_actionbar_paddingRight">10dip</dimen>
+    <dimen name="app_coomon_actionbar_leftrelativelayout_paddingTop">12dip</dimen>
+    <dimen name="app_coomon_actionbar_leftrelativelayout_paddingBottom">12dip</dimen>
+    <dimen name="app_common_actionbar_leftTextSize">18sp</dimen>
+    <dimen name="app_common_actionbar_centerTextSize">20sp</dimen>
+    <dimen name="app_common_actionbar_rightTextSize">18sp</dimen>
+    
+    
+    <!-- app_register -->
+	<dimen name="app_register_parenttop">70dp</dimen>
+	<dimen name="app_register_margintop">30dp</dimen>
+	<dimen name="app_register_left_right_margin">30dp</dimen>
+	
+	
+		<!-- 公共底部Tab -->
+    <dimen name="app_main_bottomdock_tab_paddingTop">5dip</dimen>
+    <dimen name="app_main_bottomdock_tab_paddingBottom">5dip</dimen>
+    
+    
+    <dimen name="margin">18px</dimen>
+     <dimen name="textsize">20sp</dimen>
+     <dimen name="padding">20dip</dimen>
+</resources>

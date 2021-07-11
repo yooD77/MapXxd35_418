@@ -1,0 +1,30 @@
+<!-- 
+	主界面首页模块布局文件
+	
+ -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+     <LinearLayout 
+         android:layout_width="match_parent"
+		 android:layout_height="0dip"
+		 android:orientation="vertical"
+		 android:layout_weight="1.0">
+		 <TextView 
+		     android:gravity="center"
+		     android:layout_width="fill_parent"  
+		     android:layout_height="wrap_content"
+		     android:background="@color/tv_location_bg"
+		     android:visibility="gone"
+		     android:textSize="18sp"
+		     android:id="@+id/tv_location"  />
+        <com.baidu.mapapi.map.MapView  
+		    android:id="@+id/bmapView"  
+		    android:layout_width="fill_parent"  
+		    android:layout_height="fill_parent"  
+		    android:clickable="true" />
+     </LinearLayout>
+    
+</LinearLayout>

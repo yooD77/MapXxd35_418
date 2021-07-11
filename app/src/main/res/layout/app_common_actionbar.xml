@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 
+	App公共ActionBar布局,注意默认所有View都是隐藏(gone)的
+	
+	author:yao
+ -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/app_coomon_actionbar_paddingLeft"
+    android:paddingStart="@dimen/app_coomon_actionbar_paddingLeft"
+    android:paddingRight="@dimen/app_coomon_actionbar_paddingRight"
+    android:paddingEnd="@dimen/app_coomon_actionbar_paddingRight"
+    android:background="@color/app_common_actionbar_bg">
+	
+	<RelativeLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentStart="true"
+	    android:layout_centerVertical="true"
+	    android:paddingTop="@dimen/app_coomon_actionbar_leftrelativelayout_paddingTop"
+	    android:paddingBottom="@dimen/app_coomon_actionbar_leftrelativelayout_paddingBottom">
+	    <ImageView
+	        android:id="@+id/app_common_actionbar_left_iv"
+	        android:contentDescription="@null"
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_centerVertical="true"
+	    	android:visibility="gone"/>
+	    <TextView
+	        android:id="@+id/app_common_actionbar_left_tv" 
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:textSize="@dimen/app_common_actionbar_leftTextSize"
+	    	android:layout_centerVertical="true"
+	    	android:layout_toRightOf="@id/app_common_actionbar_left_iv"
+	    	android:layout_toEndOf="@id/app_common_actionbar_left_iv"
+	    	android:visibility="gone"
+	    	android:textColor="@color/white"/> 
+	</RelativeLayout>
+	
+	<RelativeLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerInParent="true">
+		<ImageView
+	        android:id="@+id/app_common_actionbar_center_iv"
+	        android:contentDescription="@null"
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_centerVertical="true"
+	    	android:visibility="gone"/>
+	    <TextView
+	        android:id="@+id/app_common_actionbar_center_tv" 
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:textSize="@dimen/app_common_actionbar_centerTextSize"
+	    	android:layout_centerVertical="true"
+	    	android:layout_toRightOf="@id/app_common_actionbar_center_iv"
+	    	android:layout_toEndOf="@id/app_common_actionbar_center_iv"
+	    	android:visibility="gone"
+	    	android:textColor="@color/white"/>
+	</RelativeLayout>
+	
+	<RelativeLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignParentEnd="true"
+	    android:layout_centerVertical="true">
+	    <TextView
+	        android:id="@+id/app_common_actionbar_right_tv" 
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:textSize="@dimen/app_common_actionbar_rightTextSize"
+	    	android:layout_centerVertical="true"
+	    	android:visibility="gone"
+	    	android:textColor="@color/white"/>
+	    <ImageView
+	        android:id="@+id/app_common_actionbar_right_iv"
+	        android:contentDescription="@null"
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_centerVertical="true"
+	    	android:layout_toRightOf="@id/app_common_actionbar_right_tv"
+	    	android:layout_toEndOf="@id/app_common_actionbar_right_tv"
+	    	android:visibility="gone"/>
+	</RelativeLayout>
+    
+</RelativeLayout>

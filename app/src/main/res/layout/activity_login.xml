@@ -1,0 +1,83 @@
+<!-- 
+	登录界面
+	
+ -->
+ <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xxd.ui.LaunchActivity"
+    android:scrollbars="none"
+    android:background="@color/login_background">
+	<LinearLayout
+        android:id="@+id/ll_app_login_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_app_login_activity_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="100dip"
+                android:src="@drawable/map" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/app_login_icon_text_top"
+                android:text="@string/icon"
+                android:textColor="#4d8ed6"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_app_login_activity_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/app_login_view_top"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/et_login_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/app_login_view_margin_right_left"
+                android:layout_marginRight="@dimen/app_login_view_margin_right_left"
+                android:background="@drawable/app_normal_login_button_background"
+                android:gravity="center_horizontal"
+                android:hint="@string/login_username" />
+
+            <EditText
+                android:id="@+id/et_login_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/app_login_view_top"
+                android:layout_marginLeft="@dimen/app_login_view_margin_right_left"
+                android:layout_marginRight="@dimen/app_login_view_margin_right_left"
+                android:background="@drawable/app_normal_login_button_background"
+                android:hint="@string/login_password"
+                android:gravity="center_horizontal"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/btn_login_land"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/app_login_view_top"
+                android:layout_marginLeft="@dimen/app_login_view_margin_right_left"
+                android:layout_marginRight="@dimen/app_login_view_margin_right_left"
+                android:background="@drawable/app_normal_login_button_background"
+                android:text="@string/login" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

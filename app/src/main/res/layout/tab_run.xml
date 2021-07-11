@@ -1,0 +1,38 @@
+<!-- 
+	主界面消息模块布局文件
+	
+ -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+     <LinearLayout 
+         android:layout_width="match_parent"
+		 android:layout_height="0dip"
+		 android:layout_weight="6.0">
+        <com.baidu.mapapi.map.MapView  
+		    android:id="@+id/run_mapView"  
+		    android:layout_width="fill_parent"  
+		    android:layout_height="fill_parent"  
+		    android:clickable="true" />
+     </LinearLayout>
+     
+    <LinearLayout 
+         android:layout_width="match_parent"
+		 android:layout_height="0dip"
+		 android:orientation="horizontal"
+		 android:layout_weight="1.0">
+
+        <Button
+            android:id="@+id/run_start"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/app_button_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="开启轨迹服务" />
+
+     </LinearLayout>
+    
+</LinearLayout>
